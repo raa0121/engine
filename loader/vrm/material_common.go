@@ -1,4 +1,4 @@
-package gltf
+package vrm
 
 import (
 	"github.com/g3n/engine/material"
