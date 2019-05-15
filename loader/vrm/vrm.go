@@ -273,13 +273,13 @@ type Perspective struct {
 
 // Primitive represents geometry to be rendered with the given material.
 type Primitive struct {
-	Attributes map[string]int         // A dictionary object, where each key corresponds to mesh attribute semantic and each value is the index of the accessor containing attribute's data. Required.
-	Indices    *int                   // The index of the accessor that contains the indices. Not required.
-	Material   *int                   // The index of the material to apply to this primitive when rendering. Not required.
-	Mode       *int                   // The type of primitives to render. Not required. Default is 4 (TRIANGLES).
-	Targets    []map[string]int       // An array of Morph Targets. Each Morph Target is a dictionary mapping attributes (only POSITION, NORMAL, and TANGENT supported) to their deviations in the Morph Target.
-	Extensions map[string]interface{} // Dictionary object with extension-specific objects. Not required.
-	Extras     interface{}            // Application-specific data. Not required.
+	Attributes map[string]int           // A dictionary object, where each key corresponds to mesh attribute semantic and each value is the index of the accessor containing attribute's data. Required.
+	Indices    *int                     // The index of the accessor that contains the indices. Not required.
+	Material   *int                     // The index of the material to apply to this primitive when rendering. Not required.
+	Mode       *int                     // The type of primitives to render. Not required. Default is 4 (TRIANGLES).
+	Targets    []map[string]interface{} // An array of Morph Targets. Each Morph Target is a dictionary mapping attributes (only POSITION, NORMAL, and TANGENT supported) to their deviations in the Morph Target.
+	Extensions map[string]interface{}   // Dictionary object with extension-specific objects. Not required.
+	Extras     interface{}              // Application-specific data. Not required.
 }
 
 // Sampler represents a texture sampler with properties for filtering and wrapping modes.
